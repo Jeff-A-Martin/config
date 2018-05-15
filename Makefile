@@ -13,6 +13,7 @@ REPO_DIR = $(HOME)/config
 
 all:
 	make install-i3wm.conf
+	make install-i3status.conf
 
 # ~~~~~ ~~~~~ ~~~~~ ~~~~~ ~~~~~
 # Install Individual Configuration files
@@ -20,3 +21,6 @@ all:
 
 install-i3wm.conf:
 	ln -sf $(REPO_DIR)/i3/i3wm.conf $(HOME)/.config/i3/config
+
+install-i3status.conf:
+	ln -sf $(REPO_DIR)/i3/i3status.conf $(HOME)/.config/i3status/config
